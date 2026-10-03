@@ -67,7 +67,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "erol-oytun-ercan-6a4776122"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -145,9 +145,11 @@ og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Erol Oytun Ercan"
+  links:
+    - "https://www.linkedin.com/in/erol-oytun-ercan-6a4776122/"
+    - "https://github.com/eroloytunercan"
 
 
 # Analytics
@@ -165,6 +167,7 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - AGENTS.md
   - .asset-cache
   - .bundle
   - .github
@@ -177,6 +180,7 @@ exclude:
   - Capfile
   - config
   - Dockerfile
+  - docker-compose.yaml
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
@@ -187,6 +191,12 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - markdown_generator
+  - scripts
+  - talkmap
+  - talkmap.ipynb
+  - talkmap_out.ipynb
+  - talkmap.py
   - tmp
   - vendor
 keep_files:
@@ -234,6 +244,15 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
+  # Keep downloadable/static resources out of the XML sitemap.
+  - scope:
+      path: "files/**/*.pdf"
+    values:
+      sitemap: false
+  - scope:
+      path: "google49538e84a28f326e.html"
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""

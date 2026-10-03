@@ -1,6 +1,8 @@
 ---
 permalink: /
 title: "Erol Oytun Ercan"
+seo_title: "Erol Oytun Ercan | Finance Ph.D. Candidate at Georgia State University"
+description: "Erol Oytun Ercan is a Finance Ph.D. candidate at Georgia State University researching corporate innovation, executive compensation, governance, and AI in finance."
 author_profile: true
 classes: wide
 redirect_from:
