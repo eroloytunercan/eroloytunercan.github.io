@@ -20,11 +20,11 @@ I am a Ph.D. candidate in Finance at Georgia State University’s J. Mack Robins
 <div class="interest-grid">
   <div class="interest-card">
     <h3>Corporate Finance</h3>
-    <p>Corporate Innovation, Executive Compensation, and Corporate Governance.</p>
+    <p>Corporate Innovation, Executive Compensation and Corporate Governance.</p>
   </div>
   <div class="interest-card">
     <h3>FinTech</h3>
-    <p>Generative AI, Large Language Models, Agentic AI, and Textual Analysis.</p>
+    <p>Generative AI, Large Language Models, Agentic AI and Textual Analysis.</p>
   </div>
 </div>
 

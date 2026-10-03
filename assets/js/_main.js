@@ -9,37 +9,13 @@
 const PLOTLY_URL = "https://cdn.jsdelivr.net/npm/plotly.js@3.6.0/dist/plotly.min.js";
 const MERMAID_URL = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
-// Store this site's explicit theme choice separately from older template settings.
-const THEME_STORAGE_KEY = "eroloytunercan-theme";
-
-// Determine the computed theme, which can be "dark" or "light".
+// This site is intentionally fixed to the light theme.
 function determineComputedTheme() {
-  // Start in light mode unless the visitor explicitly chose dark mode here.
-  const themeSetting = localStorage.getItem(THEME_STORAGE_KEY);
-  return themeSetting === "dark" ? "dark" : "light";
+  return "light";
 }
 
-// Set the theme on page load or when explicitly called. Without an argument the
-// theme is the stored preference or, failing that, light mode.
-function setTheme(theme) {
-  const use_theme = theme || determineComputedTheme();
-
-  if (use_theme === "dark") {
-    $("html").attr("data-theme", "dark");
-    $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
-  } else if (use_theme === "light") {
-    $("html").removeAttr("data-theme");
-    $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
-  }
-}
-
-// Toggle the theme manually
-function toggleTheme() {
-  const current_theme = $("html").attr("data-theme");
-  const new_theme = current_theme === "dark" ? "light" : "dark";
-  localStorage.setItem(THEME_STORAGE_KEY, new_theme);
-  setTheme(new_theme);
-  redrawPlotly();
+function setTheme() {
+  $("html").removeAttr("data-theme");
 }
 
 // Defer the loading of Mermaid to only if there is a field on the page to be rendered
@@ -135,11 +111,8 @@ $(document).ready(function () {
   const scssLarge = 925;          // pixels, from /_sass/_themes.scss
   const scssMastheadHeight = 70;  // pixels, from the current theme (e.g., /_sass/theme/_default.scss)
 
-  // Start in light mode unless the user previously used this site's toggle.
+  // Keep the site in light mode.
   setTheme();
-
-  // Enable the theme toggle
-  $('#theme-toggle').on('click', toggleTheme);
 
   // Enable the sticky footer
   var bumpIt = function () {
