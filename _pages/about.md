@@ -14,16 +14,16 @@ I am a Ph.D. candidate in Finance at Georgia State University’s J. Mack Robins
 
 [Curriculum Vitae (PDF)](/files/Erol_Oytun_Ercan_CV.pdf){: .btn .btn--primary }
 
-## Research interests
+## Research Interests
 
 <div class="interest-grid">
   <div class="interest-card">
-    <h3>Corporate finance</h3>
-    <p>Corporate innovation, executive compensation, and corporate governance.</p>
+    <h3>Corporate Finance</h3>
+    <p>Corporate Innovation, Executive Compensation, and Corporate Governance.</p>
   </div>
   <div class="interest-card">
-    <h3>Financial technology</h3>
-    <p>Generative AI, large language models, agentic AI, and textual analysis.</p>
+    <h3>FinTech</h3>
+    <p>Generative AI, Large Language Models, Agentic AI, and Textual Analysis.</p>
   </div>
 </div>
 
@@ -34,7 +34,3 @@ I am a Ph.D. candidate in Finance at Georgia State University’s J. Mack Robins
 With Mark A. Chen and Yaswanth Pothuru
 
 {% include taking-stock-paper.html %}
-
-## Current teaching
-
-I teach **FI 3300: Corporate Finance** at Georgia State University and serve as a graduate teaching assistant for **FI 8092: AI and Machine Learning Applications in Finance**.

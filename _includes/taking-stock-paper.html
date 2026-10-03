@@ -1,9 +1,10 @@
-<figure class="paper-figure">
-  <img src="{{ base_path }}/images/taking-stock-main-discontinuity.png" alt="Four regression discontinuity plots showing jumps at the performance cutoff in patent grants, patent applications, real economic value, and forward citations" loading="lazy">
-  <figcaption><strong>Figure 5: Discontinuities in Innovation Outcomes.</strong> Panels plot the log of one plus patent grants, patent applications, Real Economic Value, and Forward Citations over <em>t</em> + 1 through <em>t</em> + 3 against the Relative-TSR distance from the selected contractual cutoff. Points are one-percentage-point covariate-adjusted binned means. Lines average predictions from the maintained triangular-kernel local-linear model over the observed covariate and fixed-effect distribution, fitted separately below and above zero inside <em>h</em> = 0.075; shaded regions are firm-clustered 95% delta-method confidence bands.</figcaption>
-</figure>
-
 <section class="paper-abstract" aria-labelledby="taking-stock-abstract">
   <h4 id="taking-stock-abstract">Abstract</h4>
   <p>We provide causal evidence on the effects of equity-based CEO incentive pay on corporate innovation activity. To capture exogenous variation in equity-based pay, we exploit a large sample of public-company relative performance share plans under which realized equity payouts vary discontinuously around performance cutoffs. Using a regression discontinuity research design, we find that CEO stock award payouts lead to significant increases in a firm’s patenting activity. Moreover, these stock award payouts increase the originality, quality, and value of a firm’s patents. We also document that payout-induced increases in innovation activity are more pronounced in the presence of managerial short-termism or restrictions on selling, hedging, or pledging of shares. Overall, our findings show that equity-based pay for top management is an important driver of corporate innovation.</p>
 </section>
+
+{% if include.show_figure %}
+<figure class="paper-figure">
+  <img src="{{ base_path }}/images/taking-stock-main-discontinuity.png" alt="Four regression discontinuity plots showing jumps at the performance cutoff in patent grants, patent applications, real economic value, and forward citations" loading="lazy">
+</figure>
+{% endif %}

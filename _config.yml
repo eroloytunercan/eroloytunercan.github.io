@@ -12,7 +12,7 @@ site_theme               : "air" # The available themes options are "default", "
 title                    : "Erol Oytun Ercan"
 title_separator          : "-"
 name                     : &name "Erol Oytun Ercan"
-description              : &description "Finance Ph.D. candidate at Georgia State University studying corporate finance, innovation, executive compensation, and financial technology."
+description              : &description "Finance Ph.D. candidate at Georgia State University studying Corporate Finance, Corporate Innovation, Executive Compensation, and FinTech."
 url                      : "https://eroloytunercan.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,7 +23,7 @@ repository               : "eroloytunercan/eroloytunercan.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "erol-ercan-profile-2026.jpg"
+  avatar           : "erol-ercan-profile-original.jpg"
   name             : "Erol Oytun Ercan"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. Candidate in Finance"

@@ -14,7 +14,7 @@ My research examines how managerial incentives and governance affect corporate i
 **Mark A. Chen, Erol Oytun Ercan, and Yaswanth Pothuru**<br>
 August 2026
 
-{% include taking-stock-paper.html %}
+{% include taking-stock-paper.html show_figure=true %}
 
 ## Work in progress
 
