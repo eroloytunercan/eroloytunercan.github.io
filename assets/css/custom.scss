@@ -8,8 +8,27 @@
   --profile-surface: #f5f8fa;
 }
 
+html,
+body,
+button,
+input,
+select,
+textarea,
+.greedy-nav,
+.author__content,
+.author__urls,
+.page__content,
+.page__footer {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 .masthead {
   border-top: 4px solid var(--profile-navy);
+}
+
+.greedy-nav a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
 }
 
 .greedy-nav a.site-title {
@@ -18,12 +37,12 @@
 }
 
 .author__avatar {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 58px;
   overflow: hidden;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0 8px 22px rgba(16, 36, 62, 0.16);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .author__avatar img {
@@ -32,18 +51,31 @@
   max-width: none;
   padding: 0 !important;
   object-fit: cover;
-  object-position: 56% 30%;
+  object-position: 42% 50%;
   border: 0 !important;
-  border-radius: 0;
-  transform: scale(1.35);
-  transform-origin: 56% 30%;
+  border-radius: 10px;
+  transform: none;
 }
 
 @media screen and (min-width: 1024px) {
   .author__avatar {
     width: 175px;
-    height: 175px;
+    height: 209px;
+    border-radius: 12px;
   }
+
+  .author__avatar img {
+    border-radius: 12px;
+  }
+}
+
+.author__name,
+.page__title,
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4 {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /* Keep the profile readable even if an icon webfont is unavailable. */
