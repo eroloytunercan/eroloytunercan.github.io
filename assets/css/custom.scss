@@ -1,0 +1,88 @@
+---
+---
+
+:root {
+  --profile-navy: #16324f;
+  --profile-blue: #2d607d;
+  --profile-gold: #b8892e;
+  --profile-surface: #f5f8fa;
+}
+
+.masthead {
+  border-top: 4px solid var(--profile-navy);
+}
+
+.greedy-nav a.site-title {
+  color: var(--profile-navy);
+  letter-spacing: -0.02em;
+}
+
+.author__avatar img {
+  border: 3px solid #fff;
+  box-shadow: 0 8px 22px rgba(16, 36, 62, 0.16);
+}
+
+/* Keep the profile readable even if an icon webfont is unavailable. */
+.author__urls i,
+.page__footer-follow i {
+  display: none;
+}
+
+#theme-icon {
+  font-family: inherit;
+  font-size: 1.15em;
+}
+
+#theme-icon::before {
+  content: "◐";
+}
+
+.page__title {
+  color: var(--profile-navy);
+  letter-spacing: -0.025em;
+}
+
+.page__content h2 {
+  color: var(--profile-navy);
+  margin-top: 2em;
+}
+
+.page__content h3 {
+  color: var(--profile-blue);
+}
+
+.btn--primary {
+  background-color: var(--profile-navy);
+}
+
+.btn--primary:hover {
+  background-color: var(--profile-blue);
+}
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.interest-card {
+  background: var(--profile-surface);
+  border-left: 4px solid var(--profile-gold);
+  border-radius: 4px;
+  padding: 1rem 1.2rem;
+}
+
+.interest-card h3 {
+  margin-top: 0;
+}
+
+.interest-card p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
+}
