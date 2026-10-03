@@ -14,13 +14,7 @@ My research examines how managerial incentives and governance affect corporate i
 **Mark A. Chen, Erol Oytun Ercan, and Yaswanth Pothuru**<br>
 August 2026
 
-[Download paper](/files/Taking_Stock.pdf){: .btn .btn--primary }
-
-We study whether equity-based CEO incentive pay causes firms to innovate. Our identification strategy exploits discontinuous stock payouts around performance cutoffs in public-company relative performance share plans. Using a regression discontinuity design, we find that stock award payouts increase patent applications and grants, as well as the originality, quality, and market value of firms' patents.
-
-The innovation response is more pronounced when managers exhibit short-term orientation and when firms restrict the selling, hedging, or pledging of shares. The findings suggest that equity payouts are especially effective when accompanied by mechanisms that keep managers exposed to long-run firm value.
-
-**Keywords:** CEO compensation; equity-based pay; regression discontinuity; performance share awards; corporate innovation; patents; managerial short-termism
+{% include taking-stock-paper.html %}
 
 ## Work in progress
 

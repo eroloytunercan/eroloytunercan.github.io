@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-## Finance Ph.D. candidate at Georgia State University
+## Ph.D. Candidate in Finance
 
-I am a doctoral student in finance at the J. Mack Robinson College of Business. My research sits at the intersection of corporate finance and financial technology, with a focus on how managerial incentives, governance, and emerging AI tools shape firm decisions and innovation.
+I am a Ph.D. candidate in Finance at Georgia State University’s J. Mack Robinson College of Business. My research interests center on corporate finance, with a focus on corporate innovation, executive compensation, and the applications of artificial intelligence in finance. My current work examines how restrictions on insider selling influence the design of managerial incentives and how equity-based compensation shapes corporate innovation. I have taught Corporate Finance at Georgia State University and served as a graduate teaching assistant for AI and Machine Learning Applications in Finance.
 
-[Research](/research/){: .btn .btn--primary } [Curriculum Vitae](/files/Erol_Oytun_Ercan_CV.pdf){: .btn .btn--inverse }
+[Curriculum Vitae (PDF)](/files/Erol_Oytun_Ercan_CV.pdf){: .btn .btn--primary }
 
 ## Research interests
 
@@ -33,9 +33,7 @@ I am a doctoral student in finance at the J. Mack Robinson College of Business. 
 
 With Mark A. Chen and Yaswanth Pothuru
 
-Using discontinuities in relative performance share plans, we provide causal evidence that CEO stock award payouts increase firms' patenting activity, originality, quality, and value. The effects are strongest when managerial short-termism is more pronounced or when executives face restrictions on selling, hedging, or pledging shares.
-
-[Read the research summary](/research/){: .btn .btn--primary } [Download the paper](/files/Taking_Stock.pdf){: .btn .btn--inverse }
+{% include taking-stock-paper.html %}
 
 ## Current teaching
 
