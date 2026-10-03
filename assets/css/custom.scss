@@ -171,6 +171,12 @@ textarea,
   margin: 0;
 }
 
+.text-justify,
+.paper-abstract p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .teaching-intro {
   max-width: 46rem;
   margin-bottom: 1.75rem;

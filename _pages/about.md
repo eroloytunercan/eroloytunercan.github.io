@@ -8,9 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-## Ph.D. Candidate in Finance
+## Welcome!
 
 I am a Ph.D. candidate in Finance at Georgia State University’s J. Mack Robinson College of Business. My research interests center on corporate finance, with a focus on corporate innovation, executive compensation, and the applications of artificial intelligence in finance. My current work examines how restrictions on insider selling influence the design of managerial incentives and how equity-based compensation shapes corporate innovation. I have taught Corporate Finance at Georgia State University and served as a graduate teaching assistant for AI and Machine Learning Applications in Finance.
+{: .text-justify }
 
 [Curriculum Vitae (PDF)](/files/Erol_Oytun_Ercan_CV.pdf){: .btn .btn--primary }
 
