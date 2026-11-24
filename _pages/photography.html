@@ -1,16 +1,22 @@
 ---
-layout: archive
+layout: photography
 title: "Photography"
 permalink: /photography/
-author_profile: true
 description: "A personal photography gallery by Erol Oytun Ercan, featuring photographs from Istanbul, Fethiye, Grenoble, Paris, and Atlanta."
 ---
 
-<p class="photography-intro">A selection of photographs made in Türkiye, France and the United States.</p>
+<header class="photography-header">
+  <p class="photography-kicker">Selected photographs <span aria-hidden="true">/</span> 2015—2025</p>
+  <div class="photography-title-row">
+    <h1>Photography</h1>
+    <p class="photography-statement">A personal archive of places, light and passing moments.</p>
+  </div>
+  <p class="photography-places">Istanbul · Fethiye · Grenoble · Paris · Atlanta</p>
+</header>
 
-<div class="photography-gallery" aria-label="Photography gallery">
+<section class="photography-gallery" aria-label="Selected photographs">
   {% for photo in site.data.photography %}
-    <figure class="photography-item" id="{{ photo.id }}">
+    <figure class="photography-item photography-item--{{ photo.presentation }}" id="{{ photo.id }}">
       <a class="photography-image-link" href="{{ photo.src | relative_url }}" target="_blank" rel="noopener" aria-label="View a larger photograph from {{ photo.location }}, {{ photo.year }}">
         <img
           src="{{ photo.src | relative_url }}"
@@ -27,4 +33,4 @@ description: "A personal photography gallery by Erol Oytun Ercan, featuring phot
       </figcaption>
     </figure>
   {% endfor %}
-</div>
+</section>

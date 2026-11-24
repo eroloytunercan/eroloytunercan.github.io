@@ -4,6 +4,7 @@
   year: 2025
   width: 2048
   height: 683
+  presentation: full
   alt: "Atlanta skyline framed by trees across the lake in Piedmont Park"
 
 - id: kuzguncuk-2023
@@ -12,6 +13,7 @@
   year: 2023
   width: 1615
   height: 2108
+  presentation: portrait-right
   alt: "A Kuzguncuk street descending toward the Bosphorus Bridge at dusk"
 
 - id: halic-2022
@@ -20,6 +22,7 @@
   year: 2022
   width: 2400
   height: 1137
+  presentation: wide-left
   alt: "A small passenger boat moored on the Golden Horn beneath the Istanbul skyline"
 
 - id: sishane-2022
@@ -28,6 +31,7 @@
   year: 2022
   width: 2400
   height: 1291
+  presentation: medium-right
   alt: "The Golden Horn and historic Istanbul seen through a window and sheer curtain"
 
 - id: kasimpasa-2021
@@ -36,6 +40,7 @@
   year: 2021
   width: 2400
   height: 912
+  presentation: full
   alt: "Kasımpaşa rooftops and stadium lights fading into morning haze"
 
 - id: uskudar-2019
@@ -44,6 +49,7 @@
   year: 2019
   width: 2400
   height: 1384
+  presentation: wide-center
   alt: "People seated along the Üsküdar waterfront facing the Maiden's Tower at sunset"
 
 - id: paris-2018
@@ -52,6 +58,7 @@
   year: 2018
   width: 2400
   height: 1267
+  presentation: medium-left
   alt: "The Fontaine des Mers with the Eiffel Tower in the distance"
 
 - id: chateau-vizille-2018
@@ -60,6 +67,7 @@
   year: 2018
   width: 2400
   height: 1262
+  presentation: wide-right
   alt: "The ochre stone facade and stairways of the Château de Vizille"
 
 - id: lake-laffrey-2018
@@ -68,6 +76,7 @@
   year: 2018
   width: 2400
   height: 1350
+  presentation: full
   alt: "Lake Laffrey reflecting a blue sky with the French Alps on the horizon"
 
 - id: bogazici-lawn-2016
@@ -76,6 +85,7 @@
   year: 2016
   width: 1544
   height: 1024
+  presentation: medium-left
   alt: "Festival audience gathered on the lawn at Boğaziçi University"
 
 - id: bogazici-stage-2016
@@ -84,6 +94,7 @@
   year: 2016
   width: 1544
   height: 1024
+  presentation: medium-right
   alt: "An outdoor music performance at Boğaziçi University"
 
 - id: cukurardic-2015
@@ -92,4 +103,5 @@
   year: 2015
   width: 1544
   height: 1024
+  presentation: wide-center
   alt: "A quiet mountain meadow among cedar trees in Çukurardıç"

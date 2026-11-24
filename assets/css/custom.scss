@@ -221,67 +221,146 @@ textarea,
   margin-bottom: 0;
 }
 
-.photography-intro {
-  max-width: 42rem;
-  margin: 0 0 1.8rem;
-  color: var(--global-text-color-light);
-  font-size: 1.02em;
+.photography-main {
+  max-width: 82rem;
+  margin-top: 0;
+  padding-top: clamp(2.75rem, 7vw, 6.5rem);
+}
+
+.photography-page {
+  width: 100%;
+}
+
+.photography-header {
+  margin-bottom: clamp(4.5rem, 10vw, 9rem);
+}
+
+.photography-kicker,
+.photography-places {
+  margin: 0;
+  color: #6f7376;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.photography-kicker span {
+  margin: 0 0.45em;
+  color: var(--profile-gold);
+}
+
+.photography-title-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(16rem, 0.75fr);
+  align-items: end;
+  gap: clamp(2rem, 7vw, 7rem);
+  margin: clamp(1.15rem, 2vw, 1.8rem) 0 clamp(2rem, 4vw, 3.5rem);
+}
+
+.photography-title-row h1 {
+  min-width: 0;
+  margin: 0;
+  color: #192633;
+  font-family: "Bodoni Moda", Didot, "Bodoni MT", Georgia, serif;
+  font-size: clamp(4.2rem, 9vw, 8.25rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.88;
+}
+
+.photography-statement {
+  max-width: 28rem;
+  margin: 0 0 0.35rem;
+  color: #4f565b;
+  font-family: "Bodoni Moda", Didot, "Bodoni MT", Georgia, serif;
+  font-size: clamp(1.15rem, 1.75vw, 1.45rem);
+  font-weight: 400;
+  line-height: 1.55;
 }
 
 .photography-gallery {
-  column-count: 2;
-  column-gap: 1.5rem;
+  display: flow-root;
 }
 
 .photography-item {
-  display: inline-block;
   width: 100%;
-  margin: 0 0 1.75rem;
-  break-inside: avoid;
-  page-break-inside: avoid;
+  margin: 0 0 clamp(5.25rem, 12vw, 10.5rem);
+}
+
+.photography-item--wide-left {
+  width: 88%;
+  margin-right: auto;
+}
+
+.photography-item--wide-right {
+  width: 88%;
+  margin-left: auto;
+}
+
+.photography-item--wide-center {
+  width: 88%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.photography-item--medium-left {
+  width: 70%;
+  margin-right: auto;
+}
+
+.photography-item--medium-right {
+  width: 70%;
+  margin-left: auto;
+}
+
+.photography-item--portrait-right {
+  width: min(52%, 34rem);
+  margin-left: auto;
 }
 
 .photography-image-link {
   display: block;
-  overflow: hidden;
-  border: 1px solid var(--global-border-color);
-  border-radius: 5px;
-  background: var(--profile-surface);
-  box-shadow: 0 3px 14px rgba(22, 50, 79, 0.08);
+  background: #eeeae4;
   cursor: zoom-in;
 }
 
 .photography-image-link:focus-visible {
-  outline: 3px solid var(--profile-gold);
-  outline-offset: 3px;
+  outline: 2px solid var(--profile-gold);
+  outline-offset: 5px;
 }
 
 .photography-item img {
   display: block;
   width: 100%;
   height: auto;
-  transition: transform 220ms ease, filter 220ms ease;
+  transition: opacity 180ms ease;
 }
 
 .photography-image-link:hover img {
-  filter: saturate(1.03);
-  transform: scale(1.012);
+  opacity: 0.94;
 }
 
 .photography-item figcaption {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 0.65rem 0.15rem 0;
-  color: var(--global-text-color-light);
-  font-size: 0.84em;
-  line-height: 1.35;
+  gap: 1.5rem;
+  margin-top: 0.8rem;
+  color: #777c80;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.45;
+  text-transform: uppercase;
 }
 
 .photography-location {
-  color: var(--profile-navy);
-  font-weight: 600;
+  color: #3f474d;
 }
 
 .photography-item time {
@@ -300,11 +379,47 @@ textarea,
     grid-template-columns: 1fr;
   }
 
-  .photography-gallery {
-    column-count: 1;
+  .photography-main {
+    padding-top: 2.25rem;
   }
 
-  .photography-item {
-    margin-bottom: 1.5rem;
+  .photography-header {
+    margin-bottom: 4.25rem;
+  }
+
+  .photography-title-row {
+    grid-template-columns: 1fr;
+    gap: 1.65rem;
+  }
+
+  .photography-title-row h1 {
+    font-size: clamp(3.2rem, 16vw, 4.5rem);
+  }
+
+  .photography-statement {
+    max-width: 19rem;
+  }
+
+  .photography-places {
+    max-width: 20rem;
+    line-height: 1.7;
+  }
+
+  .photography-item,
+  .photography-item--wide-left,
+  .photography-item--wide-right,
+  .photography-item--wide-center,
+  .photography-item--medium-left,
+  .photography-item--medium-right,
+  .photography-item--portrait-right {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4.5rem;
+    margin-left: 0;
+  }
+
+  .photography-item figcaption {
+    gap: 1rem;
+    letter-spacing: 0.09em;
   }
 }
