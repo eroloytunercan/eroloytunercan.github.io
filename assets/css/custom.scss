@@ -257,16 +257,22 @@ textarea,
   margin: clamp(1.15rem, 2vw, 1.8rem) 0 clamp(1.5rem, 3vw, 2.75rem);
 }
 
-.photography-title-row h1 {
-  min-width: 0;
+.photography-heading {
+  container-type: inline-size;
+}
+
+.photography-heading h1 {
   margin: 0;
   color: #192633;
   font-family: "Bodoni Moda", Didot, "Bodoni MT", Georgia, serif;
-  font-size: clamp(3.75rem, 8vw, 7.5rem);
+  font-size: clamp(3.75rem, 8vw, 6.5rem);
+  /* Cap the size to the heading column as the viewport grows. */
+  font-size: calc(min(clamp(3.75rem, 8vw, 7.5rem), 17.5cqi));
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 0.95;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
+  transition: none;
 }
 
 .photography-statement {
@@ -367,8 +373,9 @@ textarea,
     gap: 1.05rem;
   }
 
-  .photography-title-row h1 {
-    font-size: clamp(2.5rem, 15vw, 5.25rem);
+  .photography-heading h1 {
+    font-size: min(14vw, 5.25rem);
+    font-size: calc(min(clamp(2.5rem, 15vw, 5.25rem), 17.5cqi));
   }
 
   .photography-statement {
