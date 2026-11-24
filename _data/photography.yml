@@ -4,17 +4,7 @@
   year: 2025
   width: 2048
   height: 683
-  presentation: full
   alt: "Atlanta skyline framed by trees across the lake in Piedmont Park"
-
-- id: kuzguncuk-2023
-  src: /images/photography/kuzguncuk-istanbul-2023.jpg
-  location: "Kuzguncuk, Istanbul"
-  year: 2023
-  width: 1615
-  height: 2108
-  presentation: portrait-right
-  alt: "A Kuzguncuk street descending toward the Bosphorus Bridge at dusk"
 
 - id: halic-2022
   src: /images/photography/halic-istanbul-2022.jpg
@@ -22,8 +12,16 @@
   year: 2022
   width: 2400
   height: 1137
-  presentation: wide-left
   alt: "A small passenger boat moored on the Golden Horn beneath the Istanbul skyline"
+
+- id: kuzguncuk-2023
+  src: /images/photography/kuzguncuk-istanbul-2023.jpg
+  location: "Kuzguncuk, Istanbul"
+  year: 2023
+  width: 1615
+  height: 2108
+  spread: istanbul-views
+  alt: "A Kuzguncuk street descending toward the Bosphorus Bridge at dusk"
 
 - id: sishane-2022
   src: /images/photography/sishane-istanbul-2022.jpg
@@ -31,7 +29,7 @@
   year: 2022
   width: 2400
   height: 1291
-  presentation: medium-right
+  spread: istanbul-views
   alt: "The Golden Horn and historic Istanbul seen through a window and sheer curtain"
 
 - id: kasimpasa-2021
@@ -40,7 +38,6 @@
   year: 2021
   width: 2400
   height: 912
-  presentation: full
   alt: "Kasımpaşa rooftops and stadium lights fading into morning haze"
 
 - id: uskudar-2019
@@ -49,7 +46,6 @@
   year: 2019
   width: 2400
   height: 1384
-  presentation: wide-center
   alt: "People seated along the Üsküdar waterfront facing the Maiden's Tower at sunset"
 
 - id: paris-2018
@@ -58,7 +54,7 @@
   year: 2018
   width: 2400
   height: 1267
-  presentation: medium-left
+  spread: france-architecture
   alt: "The Fontaine des Mers with the Eiffel Tower in the distance"
 
 - id: chateau-vizille-2018
@@ -67,17 +63,17 @@
   year: 2018
   width: 2400
   height: 1262
-  presentation: wide-right
+  spread: france-architecture
   alt: "The ochre stone facade and stairways of the Château de Vizille"
 
 - id: lake-laffrey-2018
   src: /images/photography/lake-laffrey-grenoble-2018.jpg
   location: "Lake Laffrey, Grenoble, France"
   year: 2018
-  width: 2400
-  height: 1350
-  presentation: full
-  alt: "Lake Laffrey reflecting a blue sky with the French Alps on the horizon"
+  width: 4608
+  height: 1880
+  version: 2
+  alt: "Small boats on Lake Laffrey beneath wooded slopes and snow-capped mountains"
 
 - id: bogazici-lawn-2016
   src: /images/photography/bogazici-university-lawn-2016.jpg
@@ -85,7 +81,7 @@
   year: 2016
   width: 1544
   height: 1024
-  presentation: medium-left
+  spread: bogazici-festival
   alt: "Festival audience gathered on the lawn at Boğaziçi University"
 
 - id: bogazici-stage-2016
@@ -94,7 +90,7 @@
   year: 2016
   width: 1544
   height: 1024
-  presentation: medium-right
+  spread: bogazici-festival
   alt: "An outdoor music performance at Boğaziçi University"
 
 - id: cukurardic-2015
@@ -103,5 +99,4 @@
   year: 2015
   width: 1544
   height: 1024
-  presentation: wide-center
   alt: "A quiet mountain meadow among cedar trees in Çukurardıç"

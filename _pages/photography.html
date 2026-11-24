@@ -11,26 +11,33 @@ description: "A personal photography gallery by Erol Oytun Ercan, featuring phot
     <h1>Photography</h1>
     <p class="photography-statement">A personal archive of places, light and passing moments.</p>
   </div>
-  <p class="photography-places">Istanbul · Fethiye · Grenoble · Paris · Atlanta</p>
+  <p class="photography-places">Istanbul · Grenoble · Paris · Atlanta</p>
 </header>
 
 <section class="photography-gallery" aria-label="Selected photographs">
-  {% for photo in site.data.photography %}
-    <figure class="photography-item photography-item--{{ photo.presentation }}" id="{{ photo.id }}">
-      <a class="photography-image-link" href="{{ photo.src | relative_url }}" target="_blank" rel="noopener" aria-label="View a larger photograph from {{ photo.location }}, {{ photo.year }}">
-        <img
-          src="{{ photo.src | relative_url }}"
-          width="{{ photo.width }}"
-          height="{{ photo.height }}"
-          alt="{{ photo.alt }}"
-          {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
-          decoding="async"
-        >
-      </a>
-      <figcaption>
-        <span class="photography-location">{{ photo.location }}</span>
-        <time datetime="{{ photo.year }}">{{ photo.year }}</time>
-      </figcaption>
-    </figure>
+  {% assign spreads = site.data.photography | group_by_exp: "photo", "photo.spread | default: photo.id" %}
+  {% for spread in spreads %}
+    <div class="photography-spread">
+      {% for photo in spread.items %}
+        {% assign photo_ratio = photo.width | times: 1.0 | divided_by: photo.height %}
+        {% capture photo_url %}{{ photo.src | relative_url }}{% if photo.version %}?v={{ photo.version }}{% endif %}{% endcapture %}
+        <figure class="photography-item{% if photo.height > photo.width %} photography-item--portrait{% endif %}" id="{{ photo.id }}" style="--photo-ratio: {{ photo_ratio }}">
+          <a class="photography-image-link" href="{{ photo_url | escape }}" target="_blank" rel="noopener" aria-label="View a larger photograph: {{ photo.alt | escape }}">
+            <img
+              src="{{ photo_url | escape }}"
+              width="{{ photo.width }}"
+              height="{{ photo.height }}"
+              alt="{{ photo.alt | escape }}"
+              {% if forloop.parentloop.first and forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+              decoding="async"
+            >
+          </a>
+          <figcaption>
+            <span class="photography-location">{{ photo.location | escape }}</span>
+            <time datetime="{{ photo.year }}">{{ photo.year }}</time>
+          </figcaption>
+        </figure>
+      {% endfor %}
+    </div>
   {% endfor %}
 </section>
