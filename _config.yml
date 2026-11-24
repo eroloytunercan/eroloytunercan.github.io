@@ -189,6 +189,7 @@ exclude:
   - log
   - node_modules
   - package.json*
+  - "Photography Section"
   - Rakefile
   - README
   - markdown_generator
